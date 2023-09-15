@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Sign Up Example</title>
+        <link rel="stylesheet" href="signin.css">
+    </header>
+    <body>
+        <span class="background"></span>
+        <span class="centering">
+            <form class="my-form">
+                <span class="signup-welcome-row">
+                    <img
+                        class="signup-welcome"
+                        src="logo11.jpg"
+                    />
+                    <h1>Sign Up!</h1>
+                </span>
+                <span class="socials-row">
+                    <a
+                        href="#"
+                        title="Use Google"
+                    >
+                        <img src="google.png" alt="Google">
+                        Use Google
+                    </a>
+                    <a
+                        href="#"
+                        title="Use Facebook"
+                    >
+                        <img src="fb.png" alt="Facebook">
+                        Use Facebook
+                    </a>
+                </span>
+                <span class="divider">
+                    <span class="divider-line"></span>
+                    OR
+                    <span class="divider-line"></span>
+                </span>
+                <div class="my-form__content">
+                    <div class="text-field">
+                        <label for="username">User Name:</label>
+                        <input
+                            aria-label="User Name"
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Your User Name"
+                            autocomplete="off"
+                            required
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-user"
+                            width="44"
+                            height="44"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#A7A2CB"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="12" cy="7" r="4" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </div>
+                    <div class="text-field">
+                        <label for="email">Email:</label>
+                        <input
+                            aria-label="Email"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                            autocomplete="off"
+                            required
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-mail"
+                            width="44" height="44"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#A7A2CB"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                            <path d="M3 7l9 6l9 -6" />
+                        </svg>
+                    </div>
+                    <div class="text-field">
+                        <label for="password">Password:</label>
+                        <input
+                            id="password"
+                            type="password"
+                            aria-label="Password"
+                            name="password"
+                            autocomplete="off"
+                            placeholder="Your New Password"
+                            title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                            required
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke-width="1.5"
+                            stroke="#625BFE"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-key"
+                        >
+                            <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                        </svg>
+                    </div>
+                    <div class="text-field">
+                        <label for="confirm-password">Repeat Password:</label>
+                        <input
+                            id="confirm-password"
+                            type="password"
+                            aria-label="Password"
+                            autocomplete="off"
+                            name="confirm-password"
+                            placeholder="Repeat Your New Password"
+                            title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                            required
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke-width="1.5"
+                            stroke="#625BFE"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-key"
+                        >
+                            <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                        </svg>
+                    </div>
+                    <!--? more fields -->
+                    <input type="submit" class="my-form__button" value="Sign-Up" />
+                </div>
+                <div class="my-form__actions">
+                    <span>
+                        By registering you agree to our
+                        <a href="#" title="Reset Password">Terms</a>
+                        and <a href="#" title="Reset Password">Privacy</a>
+                    </span>
+                    <div class="my-form__signin">
+                        <a href="#" title="Sign In">Sign-in</a>
+                    </div>
+                </div>
+            </form>
+        </span>
+        <script src="signin.js"></script>
+    </body>
+</html>
